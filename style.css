@@ -17,32 +17,17 @@ body {
   flex-direction: row;
   justify-content: center;
   margin: 4em 2em;
-  border: 1px solid white;
+  border: 1px solid; 
+  border-radius: 40px;
+  border-color: rgba(255, 255, 255, 0.3) transparent transparent rgba(255, 255, 255, 0.3);
   width: 250px;
   height: 550px;
-  border-radius: 40px;
   /* transform: perspective(2000px) rotateY(-30deg); */
   background-color: rgba(255, 255, 255, 0.171);
   backdrop-filter: blur(50px);
+  /* filter: drop-shadow(0px 5px 6px #ffffffc2); */
+  /* box-shadow: 1px 5px 11px  #ffffffbe; */
 }
-
-.maincontainer2 {
-  position: relative;
-  top: 40px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 4em 2em;
-  border: 1px solid white;
-  width: 250px;
-  height: 550px;
-  border-radius: 40px;
-  transform: perspective(2000px) rotateY(30deg);
-  background-color: rgba(255, 255, 255, 0.171);
-  backdrop-filter: blur(50px);
-}
-
-
 
 .leftmain {
   display: flex;
@@ -86,7 +71,7 @@ body {
   background-color: transparent;
   backdrop-filter: blur(50px);
   border-radius: 50%;
-   border: 1px solid white;
+  border: 1px solid white;
 }
 
 .setAlign {
@@ -181,7 +166,7 @@ hr::before {
   left: 30%;
   bottom: 44px;
   background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 6px rgb(255, 255, 255);
+  box-shadow: 0px 0px 6px rgb(255, 255, 255);
 }
 
 .innerRounded {
@@ -195,16 +180,15 @@ hr::before {
   border-radius: 50%;
 }
 
-.roundedDot::before{
-    content: "";
-    z-index: -1;
+.roundedDot::before {
+  content: "";
+  z-index: -1;
 }
 
 .playNext {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  
 }
 
 .all {
@@ -228,17 +212,18 @@ hr::before {
 
 .red {
   background-color: rgb(242, 83, 61);
-   box-shadow: 0px 0px 20px rgb(170, 8, 8);
-    backdrop-filter: blur(10px);
-    /* filter: brightness(80%); */
+  box-shadow: 0px 0px 20px rgb(170, 8, 8);
+  backdrop-filter: blur(10px);
+  /* filter: brightness(80%); */
 }
 
-
-.back,.pause,.forward{
-     border: 1px solid white;
+.back,
+.pause,
+.forward {
+  border: 1px solid white;
 }
 
-.pause{
-   padding: 7px;
-     backdrop-filter: blur(50px);
+.pause {
+  padding: 7px;
+  backdrop-filter: blur(50px);
 }
