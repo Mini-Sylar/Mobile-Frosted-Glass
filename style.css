@@ -17,12 +17,13 @@ body {
   flex-direction: row;
   justify-content: center;
   margin: 4em 2em;
-  border: 1px solid; 
+  border: 1px solid;
   border-radius: 40px;
-  border-color: rgba(255, 255, 255, 0.3) transparent transparent rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.3) transparent transparent
+    rgba(255, 255, 255, 0.3);
   width: 250px;
   height: 550px;
-  /* transform: perspective(2000px) rotateY(-30deg); */
+  /* transform: perspective(2000px) rotateY(-45deg); */
   background-color: rgba(255, 255, 255, 0.171);
   backdrop-filter: blur(50px);
   /* filter: drop-shadow(0px 5px 6px #ffffffc2); */
