@@ -1,0 +1,244 @@
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 100vh;
+  background: url("./images/purple2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.maincontainer {
+  position: relative;
+  top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 4em 2em;
+  border: 1px solid white;
+  width: 250px;
+  height: 550px;
+  border-radius: 40px;
+  /* transform: perspective(2000px) rotateY(-30deg); */
+  background-color: rgba(255, 255, 255, 0.171);
+  backdrop-filter: blur(50px);
+}
+
+.maincontainer2 {
+  position: relative;
+  top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 4em 2em;
+  border: 1px solid white;
+  width: 250px;
+  height: 550px;
+  border-radius: 40px;
+  transform: perspective(2000px) rotateY(30deg);
+  background-color: rgba(255, 255, 255, 0.171);
+  backdrop-filter: blur(50px);
+}
+
+
+
+.leftmain {
+  display: flex;
+  flex-direction: column;
+  /* background-color: wheat; */
+  width: 100%;
+  padding: 20px;
+}
+.top {
+  display: flex;
+  /* background-color: teal; */
+  width: 100%;
+  justify-content: space-between;
+}
+
+.backwards {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  backdrop-filter: blur(50px);
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.listen {
+  display: flex;
+  /* background-color: yellowgreen; */
+}
+
+.column {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  backdrop-filter: blur(50px);
+  border-radius: 50%;
+   border: 1px solid white;
+}
+
+.setAlign {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border: 2px solid transparent;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 0px 20px rgb(255, 255, 255);
+  border-radius: 50%;
+}
+i {
+  text-align: center;
+  margin: 0 auto;
+}
+.centerImage {
+  display: flex;
+  background-color: transparent;
+  backdrop-filter: blur(70px);
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 70px;
+  border-radius: 20%;
+}
+
+.purpleguy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 20%;
+  background: url("./images/purple1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 15px 15px;
+}
+
+.names {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h4 {
+  margin-bottom: 0;
+}
+
+.progressbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 6px;
+  border: 2px solid transparent;
+  backdrop-filter: blur(50px);
+  border-radius: 20px;
+  margin-bottom: 2em;
+}
+
+hr {
+  display: flex;
+  margin: 0 auto;
+  height: 4px;
+  width: 100%;
+  background-color: white;
+  backdrop-filter: blur(50px);
+  border-radius: 20px;
+  border: 0.4px solid transparent;
+  z-index: 9;
+}
+
+hr::before {
+  display: flex;
+  content: "";
+  width: 30%;
+  z-index: 1;
+  background-color: rgb(242, 83, 61);
+}
+
+.roundedDot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  left: 30%;
+  bottom: 44px;
+  background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 6px rgb(255, 255, 255);
+}
+
+.innerRounded {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: rgb(242, 83, 61);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.roundedDot::before{
+    content: "";
+    z-index: -1;
+}
+
+.playNext {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+
+.all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border: 2px solid transparent;
+  background-color: transparent;
+  backdrop-filter: blur(50px);
+  border-radius: 50%;
+}
+
+.fas {
+  color: gray;
+}
+.fa-pause {
+  color: wheat;
+}
+
+.red {
+  background-color: rgb(242, 83, 61);
+   box-shadow: 0px 0px 20px rgb(170, 8, 8);
+    backdrop-filter: blur(10px);
+    /* filter: brightness(80%); */
+}
+
+
+.back,.pause,.forward{
+     border: 1px solid white;
+}
+
+.pause{
+   padding: 7px;
+     backdrop-filter: blur(50px);
+}
